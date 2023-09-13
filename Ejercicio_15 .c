@@ -46,6 +46,7 @@ void muestra_notas(int notas[][5],int col,int fila){
 int main()
 {
     int notas[3][5],cont=0,aprobadasTrim[3]={0,0,0},promedioGeneral=0;
+    char nombre[50],apellido[50];
 
     //carga de datos
     printf("Orden de Las Notas: 1-Matematicas\t2-Lengua\t3-Ingles\t4-Geografia\t5-Biologia\n\n");
@@ -59,9 +60,10 @@ int main()
         printf("\n\n");
     }
     //punto a
+    printf("\n\n**Los promedios del alumno: %s %s**\n\n",nombre,apellido);
+    
     muestra_notas(notas,3,5);
-
-
+    
     for(int i=0;i<5;i++){
         printf("Promedio materia nro %d es: %.2f\n",i+1,promedio(notas,3,5,cont));
         promedioGeneral+=promedio(notas,3,5,cont);//acumulador punto c
