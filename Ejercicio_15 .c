@@ -47,8 +47,13 @@ int main()
 {
     int notas[3][5],cont=0,aprobadasTrim[3]={0,0,0},promedioGeneral=0;
     char nombre[50],apellido[50];
-
+    
     //carga de datos
+    printf("ingrese el nombre del alumno: ");
+    gets(nombre);
+    printf("ingrese el nombre del apellido: ");
+    gets(apellido);
+    
     printf("Orden de Las Notas: 1-Matematicas\t2-Lengua\t3-Ingles\t4-Geografia\t5-Biologia\n\n");
     for(int i=0;i<3;i++){
         printf("|%d %c Trimestre|\n\n",i+1,248);
